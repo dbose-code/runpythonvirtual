@@ -4,7 +4,7 @@ import osproc, os, strformat
 # HARD-CODED EXECUTABLE PATH
 # ================================
 when defined(windows):
-  const exePath = r"C:\Programs\PythonVirtualEnv\tuivirtual\Scripts\python.exe"  # Change to your executable
+  const exePath = r"path\to\your\python.exe"  # Change to your executable
 else:
   const exePath = "/home/you/yourprogram"        # Change for Linux/macOS
 
@@ -25,3 +25,4 @@ when isMainModule:
   # Wait for it to finish
   discard process.waitForExit()
   echo "Process finished."
+
